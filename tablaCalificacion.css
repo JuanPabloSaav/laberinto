@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.leaderboard-list {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.leaderboard-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.player-title, .player-points {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  flex-grow: 1;
+}
