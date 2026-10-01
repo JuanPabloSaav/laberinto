@@ -17,16 +17,12 @@ body {
 
 .leaderboard-list > li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ccc;
-
+  overflow-y: hidden;
 }
 
-.player-title, .player-points {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  flex-grow: 1;
-}
+
