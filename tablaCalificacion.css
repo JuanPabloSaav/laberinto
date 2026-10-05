@@ -1,3 +1,6 @@
+/** 
+ * Styles for the leaderboard list and its items.
+ */
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
@@ -12,17 +15,87 @@ body {
   border-radius: 5px;
   padding: 0;
   margin: 0;
-  width: 100%;
+  
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.leaderboard-list > li {
+.leaderboard-player-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
+  
   justify-content: space-between;
+   
+  
+  border-bottom: 1px solid #ccc; 
+}
+
+.leaderboard-player-header {
+  padding: 5px;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  overflow-y: hidden;
+}
+
+.leaderboard-player-header, .leaderboard-player-header > *{
+  display: flex;
+  flex-direction: row;
+  
+  font-weight: bold;
+}
+
+.leaderboard-player-header, .leaderboard-player-header > a {
+  align-items: center;
+  gap: 12px;
+}
+
+.leaderboard-player-header > a {
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+}
+
+.leaderboard-player-rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: #1050ff;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 
+
+.leaderboard-player-name {
+  text-decoration: inherit;
+}
+
+.player-avatar-container {
+  width: 40px;
+  aspect-ratio: 1;
+  border: 1px solid #ccc; 
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.leaderboard-player-stadistics {
+  /* increible el polygon
+   * clip-path: polygon(x1 y1, x2 y2, x3 y3, x4 y4);
+   *
+   * cada par xy representa un punto en el poligono, y el orden de los puntos determina la forma del polígono.
+   * donde (0,0) es la esquina superior izquierda y (100%,100%) es la esquina inferior derecha del elemento.
+   * de ahi se puede armar cualquier cosa y se pueden agregar varios puntos mas.
+   *
+   */
+  display: flex;
+  clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%);
+  background-color: #1050ff;
+  min-width: 100px;
+  padding: 0px 0px 0px 10px;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+}
