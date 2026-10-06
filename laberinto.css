@@ -1,0 +1,29 @@
+.laberinto {
+  --n: 4;
+  --tam: 100px;        /* tamaño de cada cuadrado */
+  --pared: 6px;       /* grosor de las paredes */
+  --color: #222;
+
+  display: grid;
+  grid-template-columns: repeat(var(--n), var(--tam));
+  grid-auto-rows: var(--tam);
+  width: max-content;
+  border-radius: 3px;
+  background-color: rgb(204, 204, 204);
+  /* Borde superior y izquierdo definido por el laberinto*/
+  border-top: var(--pared) solid var(--color);
+  border-left: var(--pared) solid var(--color);
+}
+
+.laberinto.ocho { --n: 8; }
+.laberinto.diez { --n: 10; }
+
+.celda {
+  box-sizing: border-box;
+}
+
+.celda.r { border-right-color: black; }
+.celda.b { border-bottom-color: black; }
+
+.inicio { background: rgb(86, 179, 241); }
+.fin    { background: rgb(235, 95, 95); }
