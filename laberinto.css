@@ -20,6 +20,8 @@
 
 .celda {
   box-sizing: border-box;
+  border-right: var(--pared) solid transparent;
+  border-bottom: var(--pared) solid transparent;
 }
 
 .celda.r { border-right-color: black; }
