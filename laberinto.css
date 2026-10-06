@@ -18,14 +18,9 @@
 .laberinto.ocho { --n: 8; }
 .laberinto.diez { --n: 10; }
 
-.celda {
-  box-sizing: border-box;
-  border-right: var(--pared) solid transparent;
-  border-bottom: var(--pared) solid transparent;
-}
-
-.celda.r { border-right-color: black; }
-.celda.b { border-bottom-color: black; }
+.celda { box-sizing: border-box; }
+.celda.r { border-right: var(--pared) solid var(--color); }
+.celda.b { border-bottom: var(--pared) solid var(--color) }
 
 .inicio { background: rgb(86, 179, 241); }
 .fin    { background: rgb(235, 95, 95); }
