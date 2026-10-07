@@ -88,7 +88,8 @@ body {
    * cada par xy representa un punto en el poligono, y el orden de los puntos determina la forma del polígono.
    * donde (0,0) es la esquina superior izquierda y (100%,100%) es la esquina inferior derecha del elemento.
    * de ahi se puede armar cualquier cosa y se pueden agregar varios puntos mas.
-   *
+   * ----
+   * que piola xd lo voy a probar
    */
   display: flex;
   clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%);
