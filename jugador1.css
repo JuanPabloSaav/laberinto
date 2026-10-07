@@ -1,10 +1,9 @@
-.profile-avatar-container{
+.profile-imagen-container{
   border: 1px solid #ccc;
   border-radius: 50%;
   width: 150px;
   aspect-ratio: 1;
   overflow: hidden;
-  position: absolute;
   z-index: 10;
   top: 0px;
   left: 0px;
@@ -19,17 +18,25 @@
   }
 }
 
+.contenedor-perfil {
+  padding-inline: 5vw;
+  padding-block: 10vh;
+  margin-top: 5vh;
+}
+
 .profile-info{
   display: flex;
   flex-direction: column;
-  
+  margin-left: 10vw;
 }
 
 .profile-header{
   display: flex;
   flex-direction: row; 
-  gap: 0;
   overflow: visible;
   position: relative;
+  border-radius: 15px;
+  padding-inline: 5vw;
+  padding-block: 2vh;
+  background-color: rgb(255, 160, 75);
 }
-
