@@ -1,33 +1,31 @@
 /** 
  * Styles for the leaderboard list and its items.
  */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
 .leaderboard-list {
   list-style-type: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0;
   margin: 0;
-  
   max-width: 100%;
   overflow: hidden;
+}
+
+.leaderboard-title {
+  margin-bottom: 0;
+  margin-inline: 1vw;
+  padding-inline: 1vw;
+  padding-block: 1vh;
+  background-color: rgb(255, 160, 75);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 50px;
 }
 
 .leaderboard-player-card {
   display: flex;
   flex-direction: row;
-  
-  
   justify-content: space-between;
-   
-  
+  background-color: rgb(255, 160, 75);
   border-bottom: 1px solid #ccc; 
 }
 
@@ -60,14 +58,12 @@ body {
   align-items: center;
   width: 30px;
   aspect-ratio: 1;
-  background-color: #1050ff;
+  background-color: rgb(75, 171, 255);
   border-radius: 50%;
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
 }
-
-
 
 .leaderboard-player-name {
   text-decoration: inherit;
@@ -93,7 +89,7 @@ body {
    */
   display: flex;
   clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%);
-  background-color: #1050ff;
+  background-color: rgb(75, 171, 255);
   min-width: 100px;
   padding: 0px 0px 0px 10px;
   align-self: stretch;

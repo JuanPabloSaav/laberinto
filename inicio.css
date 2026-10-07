@@ -36,6 +36,8 @@
 }
 
 .contenedor-der {
+  box-sizing: border-box;
+  border: 5vw solid transparent;
   height: var(--altura);
   width: 50vw;
 }
