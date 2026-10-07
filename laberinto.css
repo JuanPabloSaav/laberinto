@@ -1,6 +1,6 @@
 .laberinto {
   --n: 4;
-  --tam: 100px;        /* tamaño de cada cuadrado */
+  --tam: 60px;        /* tamaño de cada cuadrado */
   --pared: 6px;       /* grosor de las paredes */
   --color: #222;
 
@@ -27,7 +27,34 @@
 
 .resolver {
   color: rgb(36, 105, 255);
-  border-radius: 3px;
+  border-radius: 4px;
   border-color: rgb(255, 153, 0);
-  margin-bottom: 30px;
+  margin-bottom: 4vh;
+  font-size: 2vw;
+}
+
+.contenedor-laberinto {
+  display: flex;
+  justify-content: center;
+  padding-inline: 10vw;
+  padding-block: 5vh;
+  background-color: rgb(0, 30, 58);
+}
+
+.info-laberinto {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(255, 160, 75);
+  border-radius: 3px;
+  margin-left: 5vw;
+  padding-inline: 2vw;
+  padding-block: 4vh;
+  h2 {
+    background-color: rgb(75, 171, 255);
+    padding-inline: 1vw;
+    padding-block: 1vh;
+    border-radius: 3px;
+  }
 }
