@@ -39,6 +39,11 @@
   background-color: #ffffff;
 }
 
+.profile-picture img {
+  width: 100px;
+  aspect-ratio: 1;
+}
+
 .profile-name{
   font-size: 24px;
   font-weight: bold;
